@@ -1,4 +1,4 @@
-#ООП модель чайника
+# ООП модель чайника
 ## Автор
 Калинич КС-34
 ## Классы
@@ -10,6 +10,7 @@ public class Kettle
         int temperature;
         bool isHot;
         occupancyState stateO;
+
         public Kettle(int max, int min)
         {
             maxLvl = max;
@@ -18,16 +19,18 @@ public class Kettle
             stateO = occupancyState.isEmpty;
             isHot = false;
         }
-public async Task AddWater(int water){...}
-public async Task Boil(){...}
-public async Task BrewACup(int cup){...}
-void CheckWaterLvl(){...}
-enum occupancyState : int
-    {
-        isFull,
-        isFilled,
-        isEmpty,
-    }
+
+        public async Task AddWater(int water){...}
+        public async Task Boil(){...}
+        public async Task BrewACup(int cup){...}
+        void CheckWaterLvl(){...}
+
+        enum occupancyState : int
+        {
+            isFull,
+            isFilled,
+            isEmpty,
+        }
 }
 ```
 Класс ошибок:
